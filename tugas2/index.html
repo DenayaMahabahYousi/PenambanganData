@@ -1,0 +1,1005 @@
+
+
+
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+      
+      
+      
+        <meta name="lang:clipboard.copy" content="Copy to clipboard">
+      
+        <meta name="lang:clipboard.copied" content="Copied to clipboard">
+      
+        <meta name="lang:search.language" content="en">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="No matching documents">
+      
+        <meta name="lang:search.result.one" content="1 matching document">
+      
+        <meta name="lang:search.result.other" content="# matching documents">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.4.2">
+    
+    
+      
+        <title>Tugas 2 - Pemahaman Data - Data Mining</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/application.30686662.css">
+      
+        <link rel="stylesheet" href="../assets/stylesheets/application-palette.a8b3c06d.css">
+      
+      
+        
+        
+        <meta name="theme-color" content="#ffa000">
+      
+    
+    
+      <script src="../assets/javascripts/modernizr.74668098.js"></script>
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono&display=fallback">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+    
+    <link rel="stylesheet" href="../assets/fonts/material-icons.css">
+    
+    
+    
+      
+    
+    
+  </head>
+  
+    
+    
+    <body dir="ltr" data-md-color-primary="amber" data-md-color-accent="orange">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
+    
+      <a href="#tugas-2-data-mining-pemahaman-data" tabindex="1" class="md-skip">
+        Skip to content
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href=".." title="Data Mining" class="md-header-nav__button md-logo">
+          
+            <i class="md-icon"></i>
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            <span class="md-header-nav__topic">
+              Data Mining
+            </span>
+            <span class="md-header-nav__topic">
+              
+                Tugas 2 - Pemahaman Data
+              
+            </span>
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
+          
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="__search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+        
+      </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+      <main class="md-main" role="main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="__drawer">
+    <a href=".." title="Data Mining" class="md-nav__button md-logo">
+      
+        <i class="md-icon"></i>
+      
+    </a>
+    Data Mining
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href=".." title="Home" class="md-nav__link">
+      Home
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../Tugas1/" title="Tugas 1 - Pengantar Data Mining" class="md-nav__link">
+      Tugas 1 - Pengantar Data Mining
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Tugas 2 - Pemahaman Data
+      </label>
+    
+    <a href="./" title="Tugas 2 - Pemahaman Data" class="md-nav__link md-nav__link--active">
+      Tugas 2 - Pemahaman Data
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#atribut-atribut-dalam-data-mining" class="md-nav__link">
+    Atribut-Atribut dalam Data Mining
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#tipe-tipe-atribut" class="md-nav__link">
+    Tipe-tipe atribut
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mengukur-jarak-data" class="md-nav__link">
+    Mengukur Jarak Data
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#mengukur-jarak-data-tipe-numerik" class="md-nav__link">
+    Mengukur Jarak Data Tipe Numerik
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#minkowski-distance" class="md-nav__link">
+    Minkowski Distance
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#manhattan-distance" class="md-nav__link">
+    Manhattan distance
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#euclidean-distance" class="md-nav__link">
+    Euclidean distance
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#average-distance" class="md-nav__link">
+    Average Distance
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#chord-distance" class="md-nav__link">
+    Chord distance
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#menghitung-jarak-data-tipe-binary" class="md-nav__link">
+    Menghitung Jarak Data Tipe Binary
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mengukur-jarak-data-tipe-categorical" class="md-nav__link">
+    Mengukur Jarak Data Tipe Categorical
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mengukur-jarak-data-tipe-ordinal" class="md-nav__link">
+    Mengukur Jarak Data Tipe Ordinal
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mengukur-jarak-data-campuran" class="md-nav__link">
+    Mengukur Jarak Data Campuran
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tugas" class="md-nav__link">
+    Tugas
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../tugas3/" title="Tugas 3 - Seleksi Fitur" class="md-nav__link">
+      Tugas 3 - Seleksi Fitur
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../NaiveBayes/" title="Tugas 4 - Naive Bayes" class="md-nav__link">
+      Tugas 4 - Naive Bayes
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../knn/" title="Tugas 5 - Weight-Based K-NN" class="md-nav__link">
+      Tugas 5 - Weight-Based K-NN
+    </a>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#atribut-atribut-dalam-data-mining" class="md-nav__link">
+    Atribut-Atribut dalam Data Mining
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#tipe-tipe-atribut" class="md-nav__link">
+    Tipe-tipe atribut
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mengukur-jarak-data" class="md-nav__link">
+    Mengukur Jarak Data
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#mengukur-jarak-data-tipe-numerik" class="md-nav__link">
+    Mengukur Jarak Data Tipe Numerik
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#minkowski-distance" class="md-nav__link">
+    Minkowski Distance
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#manhattan-distance" class="md-nav__link">
+    Manhattan distance
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#euclidean-distance" class="md-nav__link">
+    Euclidean distance
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#average-distance" class="md-nav__link">
+    Average Distance
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#chord-distance" class="md-nav__link">
+    Chord distance
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#menghitung-jarak-data-tipe-binary" class="md-nav__link">
+    Menghitung Jarak Data Tipe Binary
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mengukur-jarak-data-tipe-categorical" class="md-nav__link">
+    Mengukur Jarak Data Tipe Categorical
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mengukur-jarak-data-tipe-ordinal" class="md-nav__link">
+    Mengukur Jarak Data Tipe Ordinal
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mengukur-jarak-data-campuran" class="md-nav__link">
+    Mengukur Jarak Data Campuran
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tugas" class="md-nav__link">
+    Tugas
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                <h1 id="tugas-2-data-mining-pemahaman-data">Tugas 2 Data Mining : Pemahaman Data</h1>
+<h2 id="atribut-atribut-dalam-data-mining">Atribut-Atribut dalam Data Mining</h2>
+<p>Atribut adalah karakteristik/ ciri/ variabel yang mendeskripsikan suatu objek. Objek adalah sesuatu yang digambarkan oleh atribut. Tipe-tipe data akan menentukan tipe operasi apa yang bisa dilakukan pada data tersebut.</p>
+<h3 id="tipe-tipe-atribut">Tipe-tipe atribut</h3>
+<p><strong>1. Nominal</strong></p>
+<p>Nominal adalah tipe atribut yang mengidentifikasikan suatu perbedaan sifat, yang bertujuan hanya untuk membedakan nilai yang satu dengan yang lainnya.
++ <strong><em>Contoh:</em></strong>
++ NIM mahasiswa: E1E1 10 012, E1B2 09 123, E1A1 11 011.
++ Merek Handphone: Nokia, LG, Sony Ericson, Samsung.</p>
+<p><strong>2. Ordinal</strong></p>
+<p>Ordinal adalah tipe atribut yang mengidentifikasikan informasi mengenai suatu tingkatan yang menjadikan pembeda dari objek.
+<strong><em>Contoh:</em></strong>
++ Peringkat: Juara 1, Juara 2.
++ Kelas: Kelas bawah, kelas menengah, kelas atas.
++ Angkatan: Junior, Senior, Neneor.</p>
+<p><strong>3. Biner</strong></p>
+<p>Biner adalah atribut nominal dengan hanya dua kategori atau menyatakan: 0 atau 1. 0 biasanya berarti bahwa atribut tidak ada, dan 1 berarti bahwa itu ada.
+<strong><em>Contoh:</em></strong>
++ Jenis kelamin: Pria dan wanita.
++ Power: On dan Off.
++ Penghasilan: Untung dan Rugi.
++ Kutub: Utara dan Selatan.</p>
+<p><strong>4. Numerik</strong></p>
+<p>Numerik adalah atribut kuantitatif yang terukur, biasanya dalam bentuk tipe integer.
+<strong><em>Contoh:</em></strong>
++ Suhu: 50 Derajat Celcius, 60 derajat Kelvin, 10 derajat Fehrenheit.
++ Tahun: 2001,2006,2012.</p>
+<h2 id="mengukur-jarak-data">Mengukur Jarak Data</h2>
+<h3 id="mengukur-jarak-data-tipe-numerik">Mengukur Jarak Data Tipe Numerik</h3>
+<p>Salah satu tantangan dalam era ini dengan datatabase yang memiliki banyak tipe data. Mengukur jarak adalah komponen utama dalam algoritma clustering berbasis jarak. Alogritma seperit Algoritma Partisioning misal K-Mean, K-medoidm dan fuzzy c-mean dan rough clustering bergantung pada jarak untuk melakukan pengelompokkan</p>
+<p>Sebelum menjelaskan tentang beberapa macam ukuran jarak, kita mendefinisikan terlebih dahulu yaitu v1,v2 menyatakan dua vektor yang menyatakan v1=x1,x2,x3,...,xn dan v2=y1,y2,y3,...,yn, dimana xi,yi disebut attribut. Ada beberapa ukuran similaritas data ukuran jarak, diantaranya</p>
+<h4 id="minkowski-distance">Minkowski Distance</h4>
+<p>Kelompk Minkowski diantaranya adalah Euclidean distance dan Manhattan distance, yang menjadi kasus khusus dari Minkowski distance. Minkowski distance dinyatakan dengan</p>
+<p>dimana m adalah bilangan riel positif dan xi dan yi adalah dua vektor dalam runang dimensi n. Implementasi ukuran jarak Minkowski pada model clustering data atribut dilakukan normalisasi untuk menghindari dominasi dari atribut yang memiliki skala data besar.</p>
+<pre><code class="python">from IPython.display import Image
+Image(&quot;img/minkowski.png&quot;)
+</code></pre>
+
+<p><img alt="png" src="../tugas2_files/tugas2_3_0.png" /></p>
+<h4 id="manhattan-distance">Manhattan distance</h4>
+<p>Manhattan distance adalah kasus khsusu dari jarak Minkowski distance pada m = 1. Seperti Minkowski Distance, Manhattan distance sensitif terhadap outlier. BIla ukuran ini digunakan dalam algoritma clustering , bentuk cluster adalah hyper-rectangular. Ukuran ini didefinisikan dengan</p>
+<pre><code class="python">Image(&quot;img/manhattan.png&quot;)
+</code></pre>
+
+<p><img alt="png" src="../tugas2_files/tugas2_5_0.png" /></p>
+<h4 id="euclidean-distance">Euclidean distance</h4>
+<p>Jarak yang paling terkenal yang digunakan untuk data numerik adalah jarak Euclidean. Ini adalah kasus khusus dari jarak Minkowski ketika m = 2. Jarak Euclidean berkinerja baik ketika digunakan untuk kumpulan data cluster kompak atau terisolasi . Meskipun jarak Euclidean sangat umum dalam pengelompokan, ia memiliki kelemahan: jika dua vektor data tidak memiliki nilai atribut yang sama, kemungkin memiliki jarak yang lebih kecil daripada pasangan vektor data lainnya yang mengandung nilai atribut yang sama. Masalah lain dengan jarak Euclidean sebagai fitur skala terbesar akan mendominasi yang lain. Normalisasi fitur kontinu adalah solusi untuk mengatasi kelemahan ini.</p>
+<h4 id="average-distance">Average Distance</h4>
+<p>Berkenaan dengan kekurangan dari Jarak Euclidian Distance diatas, rata rata jarak adala versi modikfikasid ari jarak Euclidian untuk memperbaiki hasil. Untuk dua titik x,y dalam ruang dimensi n, rata-rata jarak didefinisikan dengan</p>
+<pre><code class="python">Image(&quot;img/average.png&quot;)
+</code></pre>
+
+<p><img alt="png" src="../tugas2_files/tugas2_7_0.png" /></p>
+<h4 id="chord-distance">Chord distance</h4>
+<p>Chord distance adalah salah satu ukuran jarak modifikasi Euclidean distance untuk mengatasi kekurangan dari Euclidean distance. Ini dapat dipecahkan juga dengan menggunakan skala pengukuran yang baik. Jarak ini dapat juga dihitung dari data yang tidak dinormalisasi . Chord distance didefinisikan dengan</p>
+<pre><code class="python">Image(&quot;img/chors.png&quot;)
+</code></pre>
+
+<p><img alt="png" src="../tugas2_files/tugas2_9_0.png" /></p>
+<pre><code class="python">def chordDist(v1,v2,jnis):
+    jmlh=0
+    normv1=0
+    normv2=0
+    for x in range (len(jnis)):
+        normv1=normv1+(int(a.values.tolist()[v1][jnis[x]])**2)
+        normv2=normv2+(int(a.values.tolist()[v2][jnis[x]])**2)
+        jmlh=jmlh+(int(a.values.tolist()[v1][jnis[x]])*int(a.values.tolist()[v2][jnis[x]]))
+    return ((2-(2*jmlh/(normv1*normv2)))**0.5)
+</code></pre>
+
+<h3 id="menghitung-jarak-data-tipe-binary">Menghitung Jarak Data Tipe Binary</h3>
+<pre><code class="python">Image(&quot;img/binary.png&quot;)
+</code></pre>
+
+<p><img alt="png" src="../tugas2_files/tugas2_12_0.png" /></p>
+<pre><code class="python">def binaryDist(v1,v2,jnis):
+    q=0
+    r=0
+    s=0
+    t=0
+    for x in range (len(jnis)):
+        if (int(k.values.tolist()[v1][jnis[x]]))==1 and (int(k.values.tolist()[v2][jnis[x]]))==1:
+            q=q+1
+        elif (int(k.values.tolist()[v1][jnis[x]]))==1 and (int(k.values.tolist()[v2][jnis[x]]))==2:
+            r=r+1
+        elif (int(k.values.tolist()[v1][jnis[x]]))==2 and (int(k.values.tolist()[v2][jnis[x]]))==1:
+            s=s+1
+        else:
+            t=t+1
+    return ((r+s)/(q+r+s+t))
+</code></pre>
+
+<h3 id="mengukur-jarak-data-tipe-categorical">Mengukur Jarak Data Tipe Categorical</h3>
+<pre><code class="python">Image(&quot;img/categorical.png&quot;)
+</code></pre>
+
+<p><img alt="png" src="../tugas2_files/tugas2_15_0.png" /></p>
+<pre><code class="python">def categoricalDist(v1,v2,jnis):
+    jmlh=0
+    for x in range (len(jnis)):
+        if (a.values.tolist()[v1][jnis[x]])!=(a.values.tolist()[v2][jnis[x]]):
+            jmlh=jmlh+1
+    return (jmlh)
+</code></pre>
+
+<h3 id="mengukur-jarak-data-tipe-ordinal">Mengukur Jarak Data Tipe Ordinal</h3>
+<pre><code class="python">Image(&quot;img/ordinal.png&quot;)
+</code></pre>
+
+<p><img alt="png" src="../tugas2_files/tugas2_18_0.png" /></p>
+<pre><code class="python">def ordDist(v1,v2,jns):
+    jmlh=0
+    for x in range (len(jns)):
+        z1=int(a.values.tolist()[v1][jns[x]])-1
+        z2=int(a.values.tolist()[v2][jns[x]])-1
+        jmlh=jmlh+chordDist(z1,z2,jns)
+    return (jmlh)
+</code></pre>
+
+<h3 id="mengukur-jarak-data-campuran">Mengukur Jarak Data Campuran</h3>
+<pre><code class="python">Image(&quot;img/campuran.png&quot;)
+</code></pre>
+
+<p><img alt="png" src="../tugas2_files/tugas2_21_0.png" /></p>
+<pre><code class="python">def jarak(v1,v2):
+    return ((chordDist(v1,v2,numerical)+ordDist(v1,v2,ordinal)+categoricalDist(v1,v2,categorical)+binaryDist(v1,v2,binary))/4)
+</code></pre>
+
+<h2 id="tugas">Tugas</h2>
+<p>mencari dataset campuran lalu mengukur jaraknya</p>
+<pre><code class="python">from scipy import stats
+import numpy as np
+import seaborn as sns
+import matplotlib.pyplot as plt
+import pandas as pd
+</code></pre>
+
+<pre><code class="python">df = pd.read_csv('dataTugas2.csv')
+a=df.iloc[17:23]
+a
+</code></pre>
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>sex</th>
+      <th>length</th>
+      <th>diameter</th>
+      <th>height</th>
+      <th>whole weight</th>
+      <th>shucked weight</th>
+      <th>viscera weight</th>
+      <th>shell weight</th>
+      <th>rings</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>17</th>
+      <td>F</td>
+      <td>0.440</td>
+      <td>0.340</td>
+      <td>0.100</td>
+      <td>0.4510</td>
+      <td>0.1880</td>
+      <td>0.087</td>
+      <td>0.130</td>
+      <td>10.0</td>
+    </tr>
+    <tr>
+      <th>18</th>
+      <td>M</td>
+      <td>0.365</td>
+      <td>0.295</td>
+      <td>0.080</td>
+      <td>0.2555</td>
+      <td>0.0970</td>
+      <td>0.043</td>
+      <td>0.100</td>
+      <td>7.0</td>
+    </tr>
+    <tr>
+      <th>19</th>
+      <td>M</td>
+      <td>0.450</td>
+      <td>0.320</td>
+      <td>0.100</td>
+      <td>0.3810</td>
+      <td>0.1705</td>
+      <td>0.075</td>
+      <td>0.115</td>
+      <td>9.0</td>
+    </tr>
+    <tr>
+      <th>20</th>
+      <td>M</td>
+      <td>0.355</td>
+      <td>0.280</td>
+      <td>0.095</td>
+      <td>0.2455</td>
+      <td>0.0955</td>
+      <td>0.062</td>
+      <td>0.075</td>
+      <td>11.0</td>
+    </tr>
+    <tr>
+      <th>21</th>
+      <td>I</td>
+      <td>0.380</td>
+      <td>0.275</td>
+      <td>0.100</td>
+      <td>0.2255</td>
+      <td>0.0800</td>
+      <td>0.049</td>
+      <td>0.085</td>
+      <td>10.0</td>
+    </tr>
+    <tr>
+      <th>22</th>
+      <td>F</td>
+      <td>0.565</td>
+      <td>0.440</td>
+      <td>0.155</td>
+      <td>0.9395</td>
+      <td>0.4275</td>
+      <td>0.214</td>
+      <td>0.270</td>
+      <td>12.0</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+<pre><code class="python">categorical=[0]
+num=[1,2,3,4,5,6,7,8]
+</code></pre>
+
+<pre><code class="python">from IPython.display import HTML, display
+import tabulate
+table=[
+    [&quot;Data&quot;]+[&quot;Jarak&quot;]+[&quot;Numeric&quot;]+[&quot;Categorical&quot;],
+    [&quot;v1-v2&quot;]+[0]+[0]+[0],
+    [&quot;v1-v3&quot;]+[0]+[0]+[0],
+    [&quot;v1-v4&quot;]+[0]+[0]+[0],
+    [&quot;v1-v5&quot;]+[0]+[0]+[0],
+    [&quot;v1-v6&quot;]+[0]+[0]+[0],
+    ]
+
+display(HTML(tabulate.tabulate(table, tablefmt='html')))
+</code></pre>
+
+<table>
+<tbody>
+<tr><td>Data </td><td>Jarak</td><td>Numeric</td><td>Categorical</td></tr>
+<tr><td>v1-v2</td><td>0    </td><td>0      </td><td>0          </td></tr>
+<tr><td>v1-v3</td><td>0    </td><td>0      </td><td>0          </td></tr>
+<tr><td>v1-v4</td><td>0    </td><td>0      </td><td>0          </td></tr>
+<tr><td>v1-v5</td><td>0    </td><td>0      </td><td>0          </td></tr>
+<tr><td>v1-v6</td><td>0    </td><td>0      </td><td>0          </td></tr>
+</tbody>
+</table>
+
+<pre><code class="python">def chordDist(v1,v2,jnis):
+    jmlh=0
+    normv1=0
+    normv2=0
+    for x in range (len(jnis)):
+        normv1=normv1+(int(a.values.tolist()[v1][jnis[x]])**2)
+        normv2=normv2+(int(a.values.tolist()[v2][jnis[x]])**2)
+        jmlh=jmlh+(int(a.values.tolist()[v1][jnis[x]])*int(a.values.tolist()[v2][jnis[x]]))
+    return ((2-(2*jmlh/(normv1*normv2)))**0.5)
+</code></pre>
+
+<pre><code class="python">from IPython.display import HTML, display
+import tabulate
+table=[
+    [&quot;Data&quot;]+[&quot;Jarak&quot;]+[&quot;Numeric&quot;]+[&quot;Categorical&quot;],
+    [&quot;v1,v2&quot;]+[0]+[&quot;{:.4f}&quot;.format(chordDist(0,1,num))]+[0],
+    [&quot;v1,v3&quot;]+[0]+[&quot;{:.4f}&quot;.format(chordDist(0,2,num))]+[0],
+    [&quot;v1,v4&quot;]+[0]+[&quot;{:.4f}&quot;.format(chordDist(0,3,num))]+[0],
+    [&quot;v1,v5&quot;]+[0]+[&quot;{:.4f}&quot;.format(chordDist(0,4,num))]+[0],
+    [&quot;v1,v6&quot;]+[0]+[&quot;{:.4f}&quot;.format(chordDist(0,5,num))]+[0],
+    ]
+
+display(HTML(tabulate.tabulate(table, tablefmt='html')))
+</code></pre>
+
+<table>
+<tbody>
+<tr><td>Data </td><td>Jarak</td><td>Numeric</td><td>Categorical</td></tr>
+<tr><td>v1,v2</td><td>0    </td><td>1.4041 </td><td>0          </td></tr>
+<tr><td>v1,v3</td><td>0    </td><td>1.4063 </td><td>0          </td></tr>
+<tr><td>v1,v4</td><td>0    </td><td>1.4078 </td><td>0          </td></tr>
+<tr><td>v1,v5</td><td>0    </td><td>1.4071 </td><td>0          </td></tr>
+<tr><td>v1,v6</td><td>0    </td><td>1.4083 </td><td>0          </td></tr>
+</tbody>
+</table>
+
+<pre><code class="python">def ordDist(v1,v2,jns):
+    jmlh=0
+    for x in range (len(jns)):
+        z1=int(a.values.tolist()[v1][jns[x]])-1
+        z2=int(a.values.tolist()[v2][jns[x]])-1
+        jmlh=jmlh+chordDist(z1,z2,jns)
+    return (jmlh)
+</code></pre>
+
+<pre><code class="python">def categoricalDist(v1,v2,jnis):
+    jmlh=0
+    for x in range (len(jnis)):
+        if (a.values.tolist()[v1][jnis[x]])!=(a.values.tolist()[v2][jnis[x]]):
+            jmlh=jmlh+1
+    return (jmlh)
+</code></pre>
+
+<pre><code class="python">from IPython.display import HTML, display
+import tabulate
+table=[
+    [&quot;Data&quot;]+[&quot;Jarak&quot;]+[&quot;Numeric&quot;]+[&quot;Categorical&quot;],
+    [&quot;v1,v2&quot;]+[0]+[&quot;{:.4f}&quot;.format(chordDist(0,1,num))]+[categoricalDist(0,1,categorical)],
+    [&quot;v1,v3&quot;]+[0]+[&quot;{:.4f}&quot;.format(chordDist(0,2,num))]+[categoricalDist(0,2,categorical)],
+    [&quot;v1,v4&quot;]+[0]+[&quot;{:.4f}&quot;.format(chordDist(0,3,num))]+[categoricalDist(0,3,categorical)],
+    [&quot;v1,v5&quot;]+[0]+[&quot;{:.4f}&quot;.format(chordDist(0,4,num))]+[categoricalDist(0,4,categorical)],
+    [&quot;v1,v6&quot;]+[0]+[&quot;{:.4f}&quot;.format(chordDist(0,5,num))]+[categoricalDist(0,5,categorical)],   
+    ]
+
+display(HTML(tabulate.tabulate(table, tablefmt='html')))
+</code></pre>
+
+<table>
+<tbody>
+<tr><td>Data </td><td>Jarak</td><td>Numeric</td><td>Categorical</td></tr>
+<tr><td>v1,v2</td><td>0    </td><td>1.4041 </td><td>1          </td></tr>
+<tr><td>v1,v3</td><td>0    </td><td>1.4063 </td><td>1          </td></tr>
+<tr><td>v1,v4</td><td>0    </td><td>1.4078 </td><td>1          </td></tr>
+<tr><td>v1,v5</td><td>0    </td><td>1.4071 </td><td>1          </td></tr>
+<tr><td>v1,v6</td><td>0    </td><td>1.4083 </td><td>0          </td></tr>
+</tbody>
+</table>
+
+<pre><code class="python">def campuranDist(v1,v2):
+    return ((chordDist(v1,v2,num)+categoricalDist(v1,v2,categorical))/2)
+</code></pre>
+
+<pre><code class="python">from IPython.display import HTML, display
+import tabulate
+table=[
+    [&quot;Data&quot;]+[&quot;Jarak&quot;]+[&quot;Numeric&quot;]+[&quot;Categorical&quot;],
+    [&quot;v1,v2&quot;]+[&quot;{:.4f}&quot;.format(campuranDist(0,1))]+[&quot;{:.4f}&quot;.format(chordDist(0,1,num))]+[categoricalDist(0,1,categorical)],
+    [&quot;v1,v3&quot;]+[&quot;{:.4f}&quot;.format(campuranDist(0,2))]+[&quot;{:.4f}&quot;.format(chordDist(0,2,num))]+[categoricalDist(0,2,categorical)],
+    [&quot;v1,v4&quot;]+[&quot;{:.4f}&quot;.format(campuranDist(0,3))]+[&quot;{:.4f}&quot;.format(chordDist(0,3,num))]+[categoricalDist(0,3,categorical)],
+    [&quot;v1,v5&quot;]+[&quot;{:.4f}&quot;.format(campuranDist(0,4))]+[&quot;{:.4f}&quot;.format(chordDist(0,4,num))]+[categoricalDist(0,4,categorical)],
+    [&quot;v1,v6&quot;]+[&quot;{:.4f}&quot;.format(campuranDist(0,5))]+[&quot;{:.4f}&quot;.format(chordDist(0,5,num))]+[categoricalDist(0,5,categorical)],   
+    ]
+
+display(HTML(tabulate.tabulate(table, tablefmt='html')))
+</code></pre>
+
+<table>
+<tbody>
+<tr><td>Data </td><td>Jarak </td><td>Numeric</td><td>Categorical</td></tr>
+<tr><td>v1,v2</td><td>1.2020</td><td>1.4041 </td><td>1          </td></tr>
+<tr><td>v1,v3</td><td>1.2032</td><td>1.4063 </td><td>1          </td></tr>
+<tr><td>v1,v4</td><td>1.2039</td><td>1.4078 </td><td>1          </td></tr>
+<tr><td>v1,v5</td><td>1.2036</td><td>1.4071 </td><td>1          </td></tr>
+<tr><td>v1,v6</td><td>0.7042</td><td>1.4083 </td><td>0          </td></tr>
+</tbody>
+</table>
+                
+                  
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../Tugas1/" title="Tugas 1 - Pengantar Data Mining" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Tugas 1 - Pengantar Data Mining
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../tugas3/" title="Tugas 3 - Seleksi Fitur" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Tugas 3 - Seleksi Fitur
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        powered by
+        <a href="https://www.mkdocs.org">MkDocs</a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/">
+          Material for MkDocs</a>
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../assets/javascripts/application.c648116f.js"></script>
+      
+      <script>app.initialize({version:"1.0.4",url:{base:".."}})</script>
+      
+    
+  </body>
+</html>
